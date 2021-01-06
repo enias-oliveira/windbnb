@@ -1,8 +1,21 @@
-import './App.css';
+import Home from "./pages/home";
+import Places from "./pages/places";
 
-function App() {
+import {Switch, Route} from "react-router-dom"
+
+const App = () => {
   return (
-   <div>Windbnb</div> 
+    <>
+      <Switch>
+        <Route exact path="/">
+      <Home/>
+        </Route>
+        <Route path="/places">
+      <Places/>
+        </Route>
+      </Switch>
+    </>
+
   );
 }
 
