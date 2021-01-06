@@ -1,5 +1,11 @@
+import Banner from "../../components/organisms/banner";
+
 const Home = () => {
-    return <div>Home</div>
+    return <>
+             <Banner/>
+             {/* <Hero/> */}
+             {/* <Credits/> */}
+           </>
 }
 
 export default Home;
