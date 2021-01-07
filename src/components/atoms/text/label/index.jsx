@@ -1,5 +1,5 @@
 const Label = ({ children }) => {
-  return <p className="">{children}</p>;
+  return <p className="font-sans">{children}</p>;
 };
 
 export default Label;
