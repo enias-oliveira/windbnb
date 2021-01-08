@@ -1,4 +1,4 @@
-import { ReactComponent as LogoSVG } from "./img/logo.svg";
+import { ReactComponent as LogoSVG } from "./logo.svg";
 import { FaSearch } from "react-icons/fa";
 
 export const Logo = () => {

@@ -11,6 +11,9 @@ module.exports = {
       colors: {
         "wine-red": "#EB5757",
       },
+      backgroundImage: (theme) => ({
+        "hero-image": "url('/src/images/windbnb-home-background.webp')",
+      }),
     },
   },
   variants: {

@@ -1,4 +1,4 @@
-import { SearchIcon } from "../../atoms/images/icons";
+import { SearchIcon } from "../../atoms/icons";
 import FilterLabel from "../filter-label";
 
 const mockupData = {

@@ -1,9 +1,9 @@
-import { Logo } from "../../atoms/images/icons";
+import { Logo } from "../../atoms/icons";
 import Filter from "../../molecules/filter";
 
 const Banner = () => {
   return (
-    <header className="relative flex justify-between">
+    <header className="relative flex justify-between h-32 w-screen">
       <Logo />
       <Filter />
     </header>
