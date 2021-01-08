@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         sans: ["Mulish", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        "wine-red": "#EB5757",
+      },
     },
   },
   variants: {
