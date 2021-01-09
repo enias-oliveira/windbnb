@@ -1,10 +1,16 @@
 import { ReactComponent as LogoSVG } from "./logo.svg";
 import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Logo = () => {
   return (
     <>
-      <LogoSVG className="absolute top-12 left-24" />
+      <Link to="/">
+        <LogoSVG
+          className="ml-2 md:ml-20 
+      "
+        />
+      </Link>
     </>
   );
 };
@@ -12,7 +18,7 @@ export const Logo = () => {
 export const SearchIcon = () => {
   return (
     <>
-      <FaSearch className="text-wine-red" />
+      <FaSearch className="text-wine-red " />
     </>
   );
 };

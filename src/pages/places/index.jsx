@@ -1,5 +1,11 @@
-const Places = () => {
-    return <div>Places</div>
-}
+import Banner from "../../components/organisms/banner";
 
-export default Places
+const Places = () => {
+  return (
+    <>
+      <Banner />
+    </>
+  );
+};
+
+export default Places;

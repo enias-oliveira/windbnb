@@ -12,7 +12,11 @@ const Filter = () => {
   const { location, guest, placeholderLocation, placeholderGuest } = mockupData;
 
   return (
-    <div className="flex absolute right-24 top-8 shadow rounded-2xl">
+    <div
+      className="flex  shadow rounded-2xl mx-6 md:mr-20
+    transform hover:scale-110 cursor-pointer
+    "
+    >
       <div className="px-4 py-5 border-solid border-gray-100 border-r-2">
         <FilterLabel placeholder={placeholderLocation}>{location}</FilterLabel>
       </div>
