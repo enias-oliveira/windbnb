@@ -7,7 +7,7 @@ export const Logo = () => {
     <>
       <Link to="/">
         <LogoSVG
-          className="ml-2 md:ml-20 
+          className="ml-2 md:ml-20 cursor-pointer transform hover:scale-105
       "
         />
       </Link>

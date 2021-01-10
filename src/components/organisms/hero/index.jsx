@@ -4,7 +4,7 @@ import HeroCall from "../../atoms/text/hero-call";
 const Hero = () => {
   return (
     <main
-      className="relative h-2/3 w-screen bg-hero-image bg-center bg-cover
+      className="relative h-5/6 w-screen bg-hero-image bg-center bg-cover
     "
     >
       <section className="absolute top-1/3 mx-4">

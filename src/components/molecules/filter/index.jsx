@@ -13,8 +13,8 @@ const Filter = () => {
 
   return (
     <div
-      className="flex  shadow rounded-2xl mx-6 md:mr-20
-    transform hover:scale-110 cursor-pointer
+      className="flex  shadow rounded-2xl mx-6 mb-2 md:mr-20
+    transform hover:scale-105 cursor-pointer self-center
     "
     >
       <div className="px-4 py-5 border-solid border-gray-100 border-r-2">
@@ -23,7 +23,7 @@ const Filter = () => {
       <div className="px-4 py-5">
         <FilterLabel placeholder={placeholderGuest}>{guest}</FilterLabel>
       </div>
-      <div className="px-4 py-5 border-solid border-l-2 border-gray-100">
+      <div className=" px-4 py-5 border-solid border-l-2 border-gray-100">
         <SearchIcon />
       </div>
     </div>
