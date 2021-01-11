@@ -1,12 +1,14 @@
 import Banner from "../../components/organisms/banner";
 import Credits from "../../components/molecules/credits";
-import List from "../../components/organisms/list";
+import ListContent from "../../components/organisms/list-content";
+import ListHeader from "../../components/molecules/list-header";
 
 const Places = () => {
   return (
-    <>
-      <List />
-    </>
+    <main className="relative h-5/6 w-screen">
+      <ListHeader />
+      <ListContent />
+    </main>
   );
 };
 
