@@ -1,10 +1,12 @@
-import { ListTitle } from "../../atoms/text/title";
+import Stat from "../../atoms/stat";
+import Title from "../../atoms/title";
 
 const ListHeader = () => {
   return (
-    <>
-      <ListTitle>Stays in "Temporário"</ListTitle>
-    </>
+    <header>
+      <Title>Stays in "Temporário"</Title>
+      <Stat>12+ stays</Stat>
+    </header>
   );
 };
 

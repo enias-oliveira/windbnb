@@ -1,4 +1,4 @@
-import { HeroButton } from "../../atoms/buttons";
+import Button from "../../atoms/buttons";
 import HeroCall from "../../atoms/text/hero-call";
 
 const Hero = () => {
@@ -9,7 +9,7 @@ const Hero = () => {
     >
       <section className="absolute top-1/3 mx-4">
         <HeroCall>Book unique places to stay</HeroCall>
-        <HeroButton>Explore nearby places</HeroButton>
+        <Button>Explore nearby places</Button>
       </section>
     </main>
   );

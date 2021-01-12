@@ -1,16 +1,19 @@
-import { Link } from "react-router-dom";
-
-export const HeroButton = ({ children }) => {
+const Button = ({ children }) => {
   return (
-    <Link to="/places">
-      <button
-        className="text-white font-medium p-3 bg-wine-red rounded-xl font-sans
-      transform
-    hover:scale-110
+    <button
+      className="
+      text-white
+       font-medium
+      p-3 
+      bg-wine-red 
+      rounded-xl 
+      font-sans
+      transform hover:scale-110
      "
-      >
-        {children}
-      </button>
-    </Link>
+    >
+      {children}
+    </button>
   );
 };
+
+export default Button;

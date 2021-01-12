@@ -1,13 +1,13 @@
-import Banner from "../../components/organisms/banner";
-import Credits from "../../components/molecules/credits";
-import ListContent from "../../components/organisms/list-content";
-import ListHeader from "../../components/molecules/list-header";
+import { useState } from "react";
+
+import List from "../../components/organisms/list";
 
 const Places = () => {
+  const [locations, setLocations] = useState([]);
+
   return (
     <main className="relative h-5/6 w-screen">
-      <ListHeader />
-      <ListContent />
+      <List data={locations} />
     </main>
   );
 };
