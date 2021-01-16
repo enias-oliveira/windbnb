@@ -1,5 +1,5 @@
 import ListHeader from "../../molecules/list-header";
-import ListItem from "../../molecules/list-item";
+import Card from "../../molecules/card";
 
 const List = ({ data }) => {
   return (
@@ -7,10 +7,9 @@ const List = ({ data }) => {
       <ListHeader quantity={data.length} />
       <section>
         {data.map((listItem, idx) => (
-          <ListItem item={listItem} key={idx} />
+          <Card item={listItem} key={idx} />
         ))}
       </section>
-      ;
     </div>
   );
 };
