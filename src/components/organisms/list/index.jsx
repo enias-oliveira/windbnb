@@ -1,23 +1,17 @@
 import ListHeader from "../../molecules/list-header";
+import ListItem from "../../molecules/list-item";
 
 const List = ({ data }) => {
-  console.log(data);
   return (
-    <>
-      <ListHeader />
-      <section className=" min-h-96 h-full">
-        {data.map((listItem, idx) => {
-          return (
-            <div key={idx}>
-              <h3>{listItem.city}</h3>
-              <h4>{listItem.country}</h4>
-              <p>{listItem.title}</p>
-            </div>
-          );
-        })}
+    <div className="flex flex-col items-center">
+      <ListHeader quantity={data.length} />
+      <section>
+        {data.map((listItem, idx) => (
+          <ListItem item={listItem} key={idx} />
+        ))}
       </section>
       ;
-    </>
+    </div>
   );
 };
 

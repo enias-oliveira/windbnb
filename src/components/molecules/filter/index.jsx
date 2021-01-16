@@ -17,13 +17,13 @@ const Filter = () => {
     transform hover:scale-105 cursor-pointer self-center
     "
     >
-      <div className="px-4 py-5 border-solid border-gray-100 border-r-2">
+      <div className="px-5 py-5 border-solid border-gray-100 border-r-2">
         <FilterLabel placeholder={placeholderLocation}>{location}</FilterLabel>
       </div>
-      <div className="px-4 py-5">
+      <div className="px-5 py-5">
         <FilterLabel placeholder={placeholderGuest}>{guest}</FilterLabel>
       </div>
-      <div className=" px-4 py-5 border-solid border-l-2 border-gray-100">
+      <div className=" px-5 py-5 border-solid border-l-2 border-gray-100">
         <SearchIcon />
       </div>
     </div>

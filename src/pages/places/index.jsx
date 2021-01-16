@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 import List from "../../components/organisms/list";
+import Banner from "../../components/organisms/banner";
+import Credits from "../../components/molecules/credits";
 
 const Places = () => {
   const [locations, setLocations] = useState([]);
@@ -17,9 +19,13 @@ const Places = () => {
   }, []);
 
   return (
-    <main className="relative h-5/6 w-screen">
-      <List data={locations} />
-    </main>
+    <div className="relative">
+      <Banner />
+      <main>
+        <List data={locations} />
+      </main>
+      <Credits />
+    </div>
   );
 };
 

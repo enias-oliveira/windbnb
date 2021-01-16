@@ -1,11 +1,11 @@
 import Stat from "../../atoms/stat";
 import Title from "../../atoms/title";
 
-const ListHeader = () => {
+const ListHeader = ({ quantity }) => {
   return (
-    <header>
+    <header className="flex justify-between items-center w-80 mb-6 mt-2 ">
       <Title>Stays in "Temporário"</Title>
-      <Stat>12+ stays</Stat>
+      <Stat>{quantity} stays</Stat>
     </header>
   );
 };
