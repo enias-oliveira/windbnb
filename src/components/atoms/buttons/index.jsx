@@ -6,7 +6,7 @@ const Button = ({ children }) => {
        font-medium
       p-3 
       bg-wine-red 
-      rounded-xl 
+      rounded-2xl
       font-sans
       transform hover:scale-110
      "

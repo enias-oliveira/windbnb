@@ -7,20 +7,17 @@ export const Logo = () => {
   return (
     <>
       <Link to="/">
-        <LogoSVG
-          className="ml-2 md:ml-20 cursor-pointer transform hover:scale-105
-      "
-        />
+        <LogoSVG className="ml-2 md:ml-20 cursor-pointer transform hover:scale-105" />
       </Link>
     </>
   );
 };
 
-export const SearchIcon = () => {
+export const SearchIcon = ({ white = false }) => {
   return (
-    <>
-      <FaSearch className="text-wine-red " />
-    </>
+    <div>
+      <FaSearch className={white ? "text-white" : "text-wine-red"} />
+    </div>
   );
 };
 

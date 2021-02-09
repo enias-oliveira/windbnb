@@ -1,10 +1,9 @@
-import data from "./data.json";
-
 import List from "../../components/organisms/list";
 import Credits from "../../components/molecules/credits";
+import { useLocations } from "../../store/locations-context";
 
 const Places = () => {
-  const locations = data.locations;
+  const locations = useLocations();
 
   return (
     <div className="relative">
