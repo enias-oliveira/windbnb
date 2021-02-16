@@ -1,7 +1,7 @@
-const SearchLocations = (props) => {
+const SearchLocations = ({locations}) => {
   return (
-    <ul>
-      <li>Teste</li>
+    <ul className="bg-blue-300">
+      {locations.map((location, idx) =>   (<li key={idx}>{location}</li>))  }
     </ul>
   );
 };

@@ -4,13 +4,15 @@ import "./index.css";
 import App from "./App";
 
 import { BrowserRouter as Router } from "react-router-dom";
-import LocationsProvider from "./store/locations-context";
+import Store from "./store";
+
+
 
 ReactDOM.render(
   <Router>
-    <LocationsProvider>
+    <Store>
       <App />
-    </LocationsProvider>
+    </Store>
   </Router>,
   document.getElementById("root")
 );
