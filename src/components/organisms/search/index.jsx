@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react"
-import { useLocations } from "../../../store/locations-context";
 
 import SearchButton from "../../molecules/search-button";
 import SearchHeader from "../../molecules/search-header";
@@ -9,9 +8,8 @@ const Search = () => {
 
   const [searchOptions, setSearchOptions] = useState([])
 
-  const locations = useLocations()
 
-
+/* 
   useEffect(() => {
     setSearchOptions(getUniqueLocations(locations))
   }, [locations])
@@ -21,7 +19,7 @@ const Search = () => {
     const cityCountryPair = locations.map(location => `${location.city}, ${location.country}`)
 
     return ( Array.from(new Set(cityCountryPair)))
-  }
+  } */
 
   return (
     <>

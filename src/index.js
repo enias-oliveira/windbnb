@@ -4,15 +4,13 @@ import "./index.css";
 import App from "./App";
 
 import { BrowserRouter as Router } from "react-router-dom";
-import Store from "./store";
-
-
+import SearchProvider from "./store/search-context";
 
 ReactDOM.render(
   <Router>
-    <Store>
+    <SearchProvider>
       <App />
-    </Store>
+    </SearchProvider>
   </Router>,
   document.getElementById("root")
 );
