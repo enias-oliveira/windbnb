@@ -1,4 +1,3 @@
-import { useSearchUpdate } from "../../../store/search-context"
 import { CloseIcon } from "../../atoms/icons"
 
 const SearchHeader = ({handleIcon}) => {

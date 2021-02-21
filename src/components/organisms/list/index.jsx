@@ -11,14 +11,13 @@ const List = ({ data }) => {
 
   useEffect(() => {
 
-  const filterCity = (list) => (list.filter(cur => cur.city === city))
-
-  const filterGuests = (list) => (list.filter(cur => cur.maxGuests >= guests))
-
   const dataToFilter = [...data]
 
-  const filteredCity = !!city ? filterCity(dataToFilter) : dataToFilter
+  const filterCity = (list) => (list.filter(cur => cur.city === city))
+  const filterGuests = (list) => (list.filter(cur => cur.maxGuests >= guests))
 
+
+  const filteredCity = !!city ? filterCity(dataToFilter) : dataToFilter
   const filteredGuests = !!guests ? filterGuests(filteredCity) : filteredCity
 
   setListItems(filteredGuests)

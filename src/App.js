@@ -8,8 +8,12 @@ import Credits from "./components/molecules/credits";
 import Search from "./components/organisms/search";
 import { useSearch } from "./store/search-context";
 
+import data from "./data/data.json"
 
 const App = () => {
+
+  const {locations} = data;
+
 
   const {isSearchVisible} = useSearch()
   
@@ -18,13 +22,13 @@ const App = () => {
       <div className="relative min-h-screen h-auto w-screen">
         <main className="absolute h-screen w-screen">
           <Banner />
-          { isSearchVisible && <Search  />}
+          { isSearchVisible && <Search locations={locations}  />}
           <Switch>
             <Route exact path="/">
               <Home />
             </Route>
             <Route path="/places">
-              <Places />
+              <Places locations={locations} />
             </Route>
             <Route exact path="/development">
             </Route>

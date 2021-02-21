@@ -12,8 +12,8 @@ const SearchProvider = ({children}) => {
   const [ searchOptions, setSearchOptions] = useState({
     isSearchVisible : false,
     location : { 
-      city : "Helsinki",
-      country : "Finland"},
+      city : "",
+      country : ""},
     guests : 0
   })
 
