@@ -1,13 +1,18 @@
-import {useEffect, useState} from "react"
+import { useSearchUpdate } from "../../../store/search-context";
 
 import SearchButton from "../../molecules/search-button";
 import SearchHeader from "../../molecules/search-header";
 import SearchLocations from "../../molecules/search-locations";
 
+
 const Search = () => {
 
-  const [searchOptions, setSearchOptions] = useState([])
+    const updateSearchOptions = useSearchUpdate()
 
+
+  const toggleIsSearchNotActive = () => {
+    updateSearchOptions(prevState => ({...prevState, isSearchVisible : false}));
+  }
 
 /* 
   useEffect(() => {
@@ -23,10 +28,10 @@ const Search = () => {
 
   return (
     <>
-      <section className="fixed top-0 flex flex-col justify-between items-center h-5/6 w-screen bg-white">
-        <SearchHeader/>
-        <SearchLocations locations={searchOptions} />
-        <SearchButton />
+      <section className="fixed z-50 top-0 flex flex-col justify-between items-center h-5/6 w-screen bg-white">
+        <SearchHeader handleIcon={toggleIsSearchNotActive}/>
+{/*         <SearchLocations locations={searchOptions} /> */}
+        <SearchButton handleButton={toggleIsSearchNotActive}/>
       </section>
     </>
   );

@@ -1,6 +1,7 @@
-const Button = ({ children }) => {
+const Button = ({ children, onClick }) => {
   return (
     <button
+      onClick={onClick}
       className="
       text-white
        font-medium

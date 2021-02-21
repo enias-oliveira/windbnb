@@ -9,15 +9,21 @@ export const useSearchUpdate = () => useContext(SearchUpdateContext)
 
 const SearchProvider = ({children}) => {
 
-  const [ isSearchActive, setIsSearchActive] = useState(false)
+  const [ searchOptions, setSearchOptions] = useState({
+    isSearchVisible : false,
+    location : { 
+      city : "Helsinki",
+      country : "Finland"},
+    guests : 0
+  })
 
-  const toggleSearch = () => {
-    setIsSearchActive(prevState => !prevState)
+  const updateSearchOptions = (newState) => {
+      setSearchOptions(newState)
   }
 
   return (
-    <SearchContext.Provider value={isSearchActive}>
-      <SearchUpdateContext.Provider value={toggleSearch}>
+    <SearchContext.Provider value={searchOptions}>
+      <SearchUpdateContext.Provider value={updateSearchOptions}>
       {children}
       </SearchUpdateContext.Provider>
     </SearchContext.Provider>
