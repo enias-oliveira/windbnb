@@ -1,11 +1,7 @@
 import { SearchIcon } from "../../atoms/icons";
 import Button from "../../atoms/buttons";
 
-
-const SearchButton = ({handleButton}) => {
-
-
-   
+const SearchButton = ({ handleButton }) => {
   return (
     <div className="mb-5">
       <Button onClick={handleButton}>

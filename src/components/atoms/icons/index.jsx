@@ -1,6 +1,7 @@
 import { ReactComponent as LogoSVG } from "./logo.svg";
-import { FaSearch } from "react-icons/fa";
-import { AiFillStar, AiOutlineClose} from "react-icons/ai";
+import { FaSearch, FaMapMarkerAlt } from "react-icons/fa";
+
+import { AiFillStar, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 export const Logo = () => {
@@ -32,7 +33,15 @@ export const StarIcon = () => {
 export const CloseIcon = () => {
   return (
     <>
-     <AiOutlineClose className="text-2xl"/> 
+      <AiOutlineClose className="text-2xl" />
     </>
-  )
-}
+  );
+};
+
+export const MapMarkerIcon = () => {
+  return (
+    <>
+      <FaMapMarkerAlt />
+    </>
+  );
+};
