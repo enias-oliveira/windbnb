@@ -17,20 +17,19 @@ const App = () => {
   return (
     <>
       <div className="relative min-h-screen h-auto w-screen">
-        <main className="absolute h-screen w-screen">
+        <main className="absolute h-full w-screen">
           <Banner />
           {isSearchVisible && <Search locations={locations} />}
           <Switch>
             <Route exact path="/">
               <Home />
+              <Credits />
             </Route>
             <Route path="/places">
               <Places locations={locations} />
             </Route>
-            <Route exact path="/development"></Route>
           </Switch>
         </main>
-        <Credits />
       </div>
     </>
   );

@@ -67,7 +67,7 @@ const Search = ({ locations }) => {
 
   return (
     <>
-      <section className="fixed z-50 top-0 flex flex-col justify-between items-center h-5/6 w-screen bg-white">
+      <section className="fixed z-50 top-0 flex flex-col justify-between items-center  h-5/6 w-screen bg-white">
         <div>
           <SearchHeader className="" handleIcon={toggleIsSearchNotActive} />
           <div className="self-start ml-10 ">
