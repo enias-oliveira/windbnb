@@ -1,16 +1,16 @@
 <h1 align="center">Windbnb</h1>
 
 <div align="center">
-   Solution for a challenge from  <a href="http://{Link to Challenge}" target="_blank">{Challenge Organization Name}</a>.
+   Solution for a challenge from  <a href="https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD" target="_blank">Devchallenges.io</a>.
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://windbnb-rddjevsid-enias-c137.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/enias-oliveira/windbnb/tree/master/src">
       Solution
     </a>
   </h3>
@@ -31,25 +31,40 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![MainScreenshot](https://lh3.googleusercontent.com/pw/ACtC-3fTrSjUnR0T8K1UQLPIWqX81jYM1J6CLTqKwTJq-scIHNNeBCraJMb9uZF6sDVDU3Yk1VlkzQCLPzeu3lj0E_z0TDjF6evL2GN6vSKfRX-fdeCLaMOhsdnOBwZB4IasNE7xixVv-nnpmMTci41gl3Eb=w1859-h785-no?authuser=0)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+Windbnb (a small version of Airbnb) is a React App build with the Atomic design component structure.
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+It was a great challenge deciding how each component fits in the whole application and maintaining the structure of the project.
+I also decided to use the React Context API instead of Redux and learned how to create a custom hook to manage "The Global State".
+
+![HomePage](https://lh3.googleusercontent.com/pw/ACtC-3dCJ6KvlvtQmGwHj0qdW9O9m4XYa0vhKpeUagx3ThGyCV3uKz_A4WD_Y0GHYHVuDayYkzO1lcsRyISFzS729KK6fTxJvZyK5jgC8yEudlhfCP_VcYYeyqLuTxzchbbukO712V9aq9-4H2GEhIDidwKE=w409-h833-no?authuser=0)
+
+The styling was made with Tailwind CSS and was my first attempt to use a CSS Framework. I had to do a lot of reading to understand the use of classes to style my components directly in the HTML, but it gave the project code a lot of simplicity by removing the "CSS Layer".
+
+I liked the simplicity of Tailwind and its mobile-first approach made the responsive design very easy and fast.
+
+![ListOfPlaces](https://lh3.googleusercontent.com/pw/ACtC-3duB-h3XNj2olwTd4KOoiBcvCyD5AYW-UeHRCxCSgckcb4DISWwwZ2CHmAKedEtnIPfImL-y7BLL_yPCh8E42eqqlWuJ7G3BbAGSVwdh92VF_pPxUv42aaWrdUY6lkD1qQGRqgO_ItT1uzcegYpYOG3=w403-h839-no?authuser=0)
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces
+- [styled components](https://styled-components.com/): Visual primitives for the component age by using the best bits of ES6 and CSS to style apps.
+- [React Router](https://reactrouter.com/): A collection of navigational components
+- [Tailwind](https://tailwindcss.com/): A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.
 
 ## Features
 
+- User story: I can see a list of properties
+  ![SearchResult](https://lh3.googleusercontent.com/pw/ACtC-3cPDZIZW4bspv5mmeiZCf7fNL6fli5yTPAcqmLPys2aN_3YM3x_AykgO7-6_cbcfaoQGbfMAOtTVmiztInfmKbhEOXZCnZmt0c4ABo3vfkxqluKr8H12CUdm163Wksm2HjFbrPKJ3Ag-Dm8Dr1xzPtP=w400-h831-no?authuser=0)
+- User story: I can see the property card with a name, rating, apartment type, and super host
+- User story: I can open the filter drawer
+  ![SearchBar](https://lh3.googleusercontent.com/pw/ACtC-3e8OkM8wWxbvpFIXXr5QA5Glw7l26eQZDtZDngOXV65FT2Hrq-z4mN6ewkwGXd27fqisd8GVcF7usNfxGTRf9Q7c3l6p30H45Wqs5P3XL-XUiJjiW9oCczaudEVQaJisBfNVBIix5dxtpB7SFXwi60V=w404-h836-no?authuser=0)
+- User story: I can filter properties by location and number of guests
+- User story: I can see the number of filtered items
+- User story: I can see pages following given designs
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 ## How To Use
@@ -62,7 +77,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/enias-oliveira/feedback-forum
+$ git clone https://github.com/enias-oliveira/windbnb
 
 # Install dependencies
 $ npm install
@@ -105,7 +120,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-- [devChallenges](https://devchallenges.io/) (Provided README template)
+- [devChallenges](https://devchallenges.io/)
 
 ## Contact
 
